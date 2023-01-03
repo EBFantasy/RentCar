@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\RentCar_Csharp.props" />
+</Project>
