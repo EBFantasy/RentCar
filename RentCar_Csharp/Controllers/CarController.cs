@@ -13,24 +13,18 @@ namespace RentCar_Csharp.Controllers
         {
             return new Car[] { new Car()
                 {
-                    Id = 1,
+                    carId = 1,
                     Mark = "Benz",
                     Price = 180000.00,
                     Stock = 5
                 },new Car()
                 {
-                    Id = 2,
+                    carId = 2,
                     Mark = "BWM",
                     Price = 145000.00,
                     Stock = 18
                 }
             };
-        }
-
-        [HttpPost]
-        public string PostCars()
-        {
-            return "Done";
         }
 
         [HttpDelete]

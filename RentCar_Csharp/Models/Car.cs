@@ -2,9 +2,9 @@
 {
     public class Car
     {
-        public int Id { get; set; }
+        public int carId { get; set; }
 
-        public string Mark { get; set; }
+        public string? Mark { get; set; }
 
         public double Price { get; set; }
 
