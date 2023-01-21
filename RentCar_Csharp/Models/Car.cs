@@ -1,3 +1,4 @@
+
 namespace RentCar_Csharp.Models
 {
     public class Car
@@ -11,3 +12,4 @@ namespace RentCar_Csharp.Models
         public int Stock { get; set; }
     }
 }
+
