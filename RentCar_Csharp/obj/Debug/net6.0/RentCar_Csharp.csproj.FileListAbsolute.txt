@@ -30,3 +30,17 @@ D:\LihaoWEI\NoteCrousS9\Software_architecture\Projet\RentCar_Csharp\RentCar_Csha
 D:\LihaoWEI\NoteCrousS9\Software_architecture\Projet\RentCar_Csharp\RentCar_Csharp\obj\Debug\net6.0\RentCar_Csharp.pdb
 D:\LihaoWEI\NoteCrousS9\Software_architecture\Projet\RentCar_Csharp\RentCar_Csharp\obj\Debug\net6.0\RentCar_Csharp.genruntimeconfig.cache
 D:\LihaoWEI\NoteCrousS9\Software_architecture\Projet\RentCar_Csharp\RentCar_Csharp\obj\Debug\net6.0\ref\RentCar_Csharp.dll
+D:\LihaoWEI\NoteCrousS9\Software_architecture\Projet\RentCar_Csharp\RentCar_Csharp\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+D:\LihaoWEI\NoteCrousS9\Software_architecture\Projet\RentCar_Csharp\RentCar_Csharp\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\LihaoWEI\NoteCrousS9\Software_architecture\Projet\RentCar_Csharp\RentCar_Csharp\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\LihaoWEI\NoteCrousS9\Software_architecture\Projet\RentCar_Csharp\RentCar_Csharp\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
+D:\LihaoWEI\NoteCrousS9\Software_architecture\Projet\RentCar_Csharp\RentCar_Csharp\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+D:\LihaoWEI\NoteCrousS9\Software_architecture\Projet\RentCar_Csharp\RentCar_Csharp\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\LihaoWEI\NoteCrousS9\Software_architecture\Projet\RentCar_Csharp\RentCar_Csharp\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+D:\LihaoWEI\NoteCrousS9\Software_architecture\Projet\RentCar_Csharp\RentCar_Csharp\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\LihaoWEI\NoteCrousS9\Software_architecture\Projet\RentCar_Csharp\RentCar_Csharp\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
+D:\LihaoWEI\NoteCrousS9\Software_architecture\Projet\RentCar_Csharp\RentCar_Csharp\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\LihaoWEI\NoteCrousS9\Software_architecture\Projet\RentCar_Csharp\RentCar_Csharp\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+D:\LihaoWEI\NoteCrousS9\Software_architecture\Projet\RentCar_Csharp\RentCar_Csharp\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+D:\LihaoWEI\NoteCrousS9\Software_architecture\Projet\RentCar_Csharp\RentCar_Csharp\bin\Debug\net6.0\Npgsql.dll
+D:\LihaoWEI\NoteCrousS9\Software_architecture\Projet\RentCar_Csharp\RentCar_Csharp\bin\Debug\net6.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
