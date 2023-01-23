@@ -6,9 +6,9 @@ services:
     environment:
       POSTGRES_USER: postgres
       POSTGRES_DB: RentalSystem
-      POSTGRES_PASSWORD: rentalcar
+      POSTGRES_PASSWORD: efrei
     ports:
-      - 5432:5432
+      - 127.0.0.1:5002:5432
     volumes:
       - ./docker/postgres:/var/lib/postgresql/data
 
@@ -18,7 +18,7 @@ services:
       - postgres
     environment:
       PGADMIN_DEFAULT_EMAIL: lihao.wei23@gmail.com
-      PGADMIN_DEFAULT_PASSWORD: rentalcar
+      PGADMIN_DEFAULT_PASSWORD: efrei
     ports:
       - 127.0.0.1:8080:80
 
