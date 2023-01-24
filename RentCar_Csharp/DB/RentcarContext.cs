@@ -11,7 +11,10 @@ namespace RentCar_Csharp.DB
             if (!File.Exists("password.txt"))
             {
                 Console.WriteLine("Enter password (it will be saved in password.txt)");
-                string s = Console.ReadLine();
+                string? s;
+                do
+                    s = Console.ReadLine();
+                while (s == null || s.Length == 0);
                 File.WriteAllText("password.txt", s);
             }
             string password = File.ReadAllText("password.txt");
