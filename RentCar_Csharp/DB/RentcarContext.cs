@@ -23,20 +23,22 @@ namespace RentCar_Csharp.DB
                 }
 
                 /*****************************Using joins for querying and data processing*****************************/
-
-                using (var cmd = new NpgsqlCommand("CREATE TABLE users (userId BIGINT PRIMARY KEY, name VARCHAR(255), gender VARCHAR(255), phoneN INTEGER, account VARCHAR(255))", conn))
-                {
-                    cmd.ExecuteNonQuery();
-                }
-
                 /*
-                // ALTER TABLE to make changes, here is an example for changing userID INTEGRES to GIFINT
-                using (var cmd = new NpgsqlCommand("ALTER TABLE users ALTER COLUMN userId TYPE BIGINT;", conn))
+                using (var cmd = new NpgsqlCommand("CREATE TABLE users (userId BIGINT PRIMARY KEY, name VARCHAR(255), gender VARCHAR(255), phoneN INTEGER, account VARCHAR(255))", conn))
                 {
                     cmd.ExecuteNonQuery();
                 }
                 */
 
+                /*
+                // ALTER TABLE to change the data type
+                using (var cmd = new NpgsqlCommand("ALTER TABLE users ALTER COLUMN phoneN TYPE VARCHAR(255);", conn))
+                {
+                    cmd.ExecuteNonQuery();
+                }
+                */
+
+                /*
                 using (var cmd = new NpgsqlCommand("INSERT INTO users (userId, name, gender, phoneN, account) VALUES (@userId, @name, @gender, @phoneN, @account)", conn))
                 {
                     cmd.Parameters.AddWithValue("userId", 198671568324769L);
@@ -45,14 +47,28 @@ namespace RentCar_Csharp.DB
                     cmd.Parameters.AddWithValue("phoneN", 0728523143);
                     cmd.Parameters.AddWithValue("account", "customer");
                     cmd.ExecuteNonQuery();
-                }
+                    cmd.Parameters.Clear();
 
+                    cmd.Parameters.AddWithValue("userId", 126489984651312L);
+                    cmd.Parameters.AddWithValue("name", "Christopher");
+                    cmd.Parameters.AddWithValue("gender", "male");
+                    cmd.Parameters.AddWithValue("phoneN", 0795713648);
+                    cmd.Parameters.AddWithValue("account", "admin");
+                    cmd.ExecuteNonQuery();
+                }
+                */
+                
                 /*
                 // update example
-                using (var cmd = new NpgsqlCommand("UPDATE users SET name = @name WHERE userId = @userId", conn))
+                using (var cmd = new NpgsqlCommand("UPDATE users SET phoneN = @phoneN WHERE userId = @userId", conn))
                 {
                     cmd.Parameters.AddWithValue("userId", 198671568324769L);
-                    cmd.Parameters.AddWithValue("name", "John Doe");
+                    cmd.Parameters.AddWithValue("phoneN", "0728523143");
+                    cmd.ExecuteNonQuery();
+                    cmd.Parameters.Clear();
+
+                    cmd.Parameters.AddWithValue("userId", 126489984651312L);
+                    cmd.Parameters.AddWithValue("phoneN", "0795713648");
                     cmd.ExecuteNonQuery();
                 }
                 */
@@ -66,9 +82,9 @@ namespace RentCar_Csharp.DB
                 }
                 */
 
-                /*
+                
                 // query example
-                using (var cmd = new NpgsqlCommand("SELECT * FROM users WHERE name = 'Noltz'", conn))
+                using (var cmd = new NpgsqlCommand("SELECT * FROM users WHERE name = 'Christopher'", conn))
                 {
                     using (var reader = cmd.ExecuteReader())
                     {
@@ -78,7 +94,7 @@ namespace RentCar_Csharp.DB
                         }
                     }
                 }
-                */
+                
 
                 conn.Close();
             }
