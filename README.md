@@ -13,3 +13,4 @@ Install all required dependencies at once (usually only the following libraries 
 2. Install the Npgsql dependencies
 
 use command : dotnet run --project "project root path"
+

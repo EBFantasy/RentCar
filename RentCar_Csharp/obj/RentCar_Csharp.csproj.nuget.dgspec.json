@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\LihaoWEI\\NoteCrousS9\\Software_architecture\\Projet\\RentCar_Csharp\\RentCar_Csharp\\RentCar_Csharp.csproj": {}
+    "D:\\School\\Software Systems Architecture\\project\\RentCar_Csharp\\RentCar_Csharp.csproj": {}
   },
   "projects": {
-    "D:\\LihaoWEI\\NoteCrousS9\\Software_architecture\\Projet\\RentCar_Csharp\\RentCar_Csharp\\RentCar_Csharp.csproj": {
+    "D:\\School\\Software Systems Architecture\\project\\RentCar_Csharp\\RentCar_Csharp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\LihaoWEI\\NoteCrousS9\\Software_architecture\\Projet\\RentCar_Csharp\\RentCar_Csharp\\RentCar_Csharp.csproj",
+        "projectUniqueName": "D:\\School\\Software Systems Architecture\\project\\RentCar_Csharp\\RentCar_Csharp.csproj",
         "projectName": "RentCar_Csharp",
-        "projectPath": "D:\\LihaoWEI\\NoteCrousS9\\Software_architecture\\Projet\\RentCar_Csharp\\RentCar_Csharp\\RentCar_Csharp.csproj",
-        "packagesPath": "C:\\Users\\lihao\\.nuget\\packages\\",
-        "outputPath": "D:\\LihaoWEI\\NoteCrousS9\\Software_architecture\\Projet\\RentCar_Csharp\\RentCar_Csharp\\obj\\",
+        "projectPath": "D:\\School\\Software Systems Architecture\\project\\RentCar_Csharp\\RentCar_Csharp.csproj",
+        "packagesPath": "C:\\Users\\PC_Cray\\.nuget\\packages\\",
+        "outputPath": "D:\\School\\Software Systems Architecture\\project\\RentCar_Csharp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "D:\\VStudio\\components\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\lihao\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\PC_Cray\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,7 +26,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -77,7 +76,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "c:\\program files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

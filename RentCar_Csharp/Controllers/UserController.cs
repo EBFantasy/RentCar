@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using RentCar_Csharp.Models;
 
@@ -24,3 +24,4 @@ namespace RentCar_Csharp.Controllers
         }
     }
 }
+
