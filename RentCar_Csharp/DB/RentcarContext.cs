@@ -1,13 +1,23 @@
-﻿﻿using Npgsql;
+﻿using Microsoft.EntityFrameworkCore;
+using Npgsql;
+using RentCar_Csharp.Models;
 
 namespace RentCar_Csharp.DB
 {
-    public class RentcarContext
+    public class RentcarContext : DbContext
     {
-        public void RentalDB()
+        public RentcarContext() { }
+        public RentcarContext(DbContextOptions<RentcarContext> options)
+        : base(options)
         {
-            // Please configure the server's IP address based on the results of the inquiry. You can go to the pgadmin page to confirm the connection.
-            //
+        }
+
+        public DbSet<User> Users { get; set; } = null!;
+        public DbSet<Car> Cars { get; set; } = null!;
+        public DbSet<Reservation> Reservations { get; set; } = null!;
+
+        public string GetPassword()
+        {
             if (!File.Exists("password.txt"))
             {
                 Console.WriteLine("Enter password (it will be saved in password.txt)");
@@ -18,8 +28,14 @@ namespace RentCar_Csharp.DB
                 File.WriteAllText("password.txt", s);
             }
             string password = File.ReadAllText("password.txt");
+            return password;
+        }
 
-            string connectionString = "Server=127.0.0.1;port=5432;Database=postgres;Username=postgres;Password=" + password;
+        public void RentalDB()
+        {
+            // Please configure the server's IP address based on the results of the inquiry. You can go to the pgadmin page to confirm the connection.
+            //
+            string connectionString = TextConstants.DB_CONNECTIONPATH + GetPassword();
             using (var conn = new NpgsqlConnection(connectionString))
             {
                 try
@@ -36,12 +52,12 @@ namespace RentCar_Csharp.DB
                 /*****************************Using joins for querying and data processing*****************************/
 
 
-                using (var cmd = new NpgsqlCommand("DROP TABLE IF EXISTS users", conn))
+                using (var cmd = new NpgsqlCommand(TextConstants.DROP_ALL_USERS, conn))
                 {
                     cmd.ExecuteNonQuery();
                 }
 
-                using (var cmd = new NpgsqlCommand("CREATE TABLE users (userId BIGINT PRIMARY KEY, name VARCHAR(255), gender VARCHAR(255), phoneN INTEGER, account VARCHAR(255))", conn))
+                using (var cmd = new NpgsqlCommand(TextConstants.CREATE_TABLE_USERS, conn))
                 {
                     cmd.ExecuteNonQuery();
                 }
@@ -56,7 +72,7 @@ namespace RentCar_Csharp.DB
 
 
 
-                using (var cmd = new NpgsqlCommand("INSERT INTO users (userId, name, gender, phoneN, account) VALUES (@userId, @name, @gender, @phoneN, @account)", conn))
+                using (var cmd = new NpgsqlCommand(TextConstants.INSERT_INTO_USERS, conn))
                 {
                     cmd.Parameters.AddWithValue("userId", 198671568324769L);
                     cmd.Parameters.AddWithValue("name", "Noltz");

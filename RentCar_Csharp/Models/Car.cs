@@ -3,7 +3,7 @@ namespace RentCar_Csharp.Models
 {
     public class Car
     {
-        public int carId { get; set; }
+        public int Id { get; set; }
 
         public string? Mark { get; set; }
 
