@@ -10,7 +10,7 @@ using RentCar_Csharp.Models;
 
 namespace RentCar_Csharp.Controllers
 {
-    [Route("api/[UsersController]")]
+    [Route("api/Users")]
     [ApiController]
     public class UsersController : ControllerBase
     {

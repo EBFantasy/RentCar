@@ -8,13 +8,14 @@ namespace RentCar_Csharp.DB
         public List<Reservation> Reservations = new List<Reservation>();
 
         public Cart(User user) { this.user = user; }
-
+        /*
         public void AddReservation(Car car) 
         {
             if (car == null) throw new ArgumentNullException("No car");
             if (user == null) throw new ArgumentNullException("No user");
             Reservations.Add(new Reservation(car, user));
         }
+        */
 
         public bool ClearCart()
         {
